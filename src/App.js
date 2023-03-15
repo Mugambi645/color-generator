@@ -21,9 +21,9 @@ function App() {
 
   return (
     <>
-      <section className='container'>
-        <h3>color generator</h3>
-        <form onSubmit={handleSubmit}>
+      <section className='container-fluid'>
+        <h3 className='text-center p-sans md:p-4 p-4'>Color Generator</h3>
+        <form onSubmit={handleSubmit} className="p-4  space-y-4">
           <input
             type='text'
             value={color}
@@ -31,7 +31,7 @@ function App() {
             placeholder='#f15025'
             className={`${error ? 'error' : null}`}
           />
-          <button className='btn' type='submit'>
+          <button className='btn ' type='submit'>
             submit
           </button>
         </form>
